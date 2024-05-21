@@ -1,0 +1,16 @@
+{
+  "name": "renderhtml-with-js-and-tailwindcss",
+  "version": "1.0.0",
+  "description": "aaj hum TailwindCSS or html ko JS k sath render krwayen gey Browser pr",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./tailwindcss/input.css -o ./tailwindcss/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

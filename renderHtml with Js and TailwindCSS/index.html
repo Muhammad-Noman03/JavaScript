@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reander Data with Js and TailwindCSS</title>
+    <link rel="stylesheet" href="tailwindcss/output.css">
+</head>
+
+<body>
+    <div class="container border-[5px] border-black h-[100vh] mx-auto flex justify-center items-center">
+        <div id="todoBox" class="border-black border-2 w-[40rem] h-[40rem] rounded-xl">
+            <div id="inputTask" class="py-4 px-3 m-3 border-2 rounded-lg flex">
+                <input type="text" id="input" class="outline-none grow text-lg " autocomplete="off"
+                    placeholder="...Add Task">
+                <div id="addBtn" class="bg-green-500 text-white px-3 py-2 rounded-lg cursor-pointer">Add to Task</div>
+            </div>
+            <div id="renderTask"
+                class="py-4 px-3 m-3 border-2 rounded-lg flex flex-col gap-2 items-center justify-between">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
