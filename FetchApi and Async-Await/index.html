@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch API and Async-Await</title>
     <link rel="stylesheet" href="css/output.css">
 </head>
+
 <body>
     <div class="container mx-auto h-[100vh]">
 
         <!-- WEATHER BOX -->
         <div id="weatherBox" class="p-3 my-3 mx-4 h-full grid grid-cols-9 grid-rows-9">
-            
+
             <!-- SECTION 1 INPUT -->
             <div id="section-1" class="flex items-center col-span-6 row-span-2">
-                <div id="inputBox" class="flex w-full items-center text-center p-2 mx-3 my-2 text-[1.6rem] border-2 rounded-lg">
-                    <input type="text" id="input" autocomplete="off" class="grow-[7] h-[3rem] outline-none" >
-                    <div id="searchIcon" class="grow-[2] cursor-pointer bg-blue-400 py-2 rounded-lg  text-white">search</div>
+                <div id="inputBox"
+                    class="flex w-full items-center text-center p-2 mx-3 my-2 text-[1.6rem] border-2 rounded-lg">
+                    <input type="text" id="input" autocomplete="off" class="grow-[7] h-[3rem] outline-none">
+                    <div id="searchIcon" class="grow-[2] cursor-pointer bg-blue-400 py-2 rounded-lg  text-white">search
+                    </div>
                 </div>
             </div>
-            
+
             <!-- WEATHER FORECAST -->
+
             <div id="section-2" class="border-2 border-green-500 col-span-6 row-span-7"></div>
-            
+
             <!-- MORE WEATHER INFO -->
             <div id="section-3" class="border-2 border-orange-500 col-start-7 col-span-3 row-span-full"></div>
         </div>
@@ -30,4 +35,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>

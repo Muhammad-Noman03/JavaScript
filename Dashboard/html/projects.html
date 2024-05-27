@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Projects</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="shortcut icon" href="../icon/javascript_24dp_FILL0_wght400_GRAD0_opsz24.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="flex h-screen bg-gray-100">
+
+        <!-- sidebar -->
+        <div id="sidebarContainer" class="flex flex-col w-0 transition-all duration-1000 bg-gray-800">
+            <div class="flex items-center justify-center h-16 bg-gray-900">
+                <span class="text-white font-bold uppercase">Sidebar</span>
+            </div>
+            <div class="flex flex-col flex-1 overflow-y-auto">
+                <nav class="flex-1 px-2 py-4 bg-gray-800">
+                    <a class="flex items-center px-4 py-2 rounded-lg cursor-pointer text-gray-100 hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+                        </svg>
+                        Dashboard
+                    </a>
+                    <a onclick="window.location.href = './projects.html'"
+                        class="flex items-center px-4 py-2 rounded-lg cursor-pointer mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="M440-183v-274L200-596v274l240 139Zm80 0 240-139v-274L520-457v274Zm-40-343 237-137-237-137-237 137 237 137ZM160-252q-19-11-29.5-29T120-321v-318q0-22 10.5-40t29.5-29l280-161q19-11 40-11t40 11l280 161q19 11 29.5 29t10.5 40v318q0 22-10.5 40T800-252L520-91q-19 11-40 11t-40-11L160-252Zm320-228Z" />
+                        </svg>
+                        Deployed Projects
+                    </a>
+                    <a onclick="window.location.href = './Task.html'"
+                        class="flex items-center px-4 py-2 rounded-lg cursor-pointer mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                        </svg>
+                        Task
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex flex-col flex-1 overflow-y-auto">
+            <div class="flex items-center justify-between h-16 bg-white border-b border-gray-200">
+                <div class="flex items-center px-4">
+                    <button id="sidebar" class="text-gray-500 focus:outline-none focus:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <input class="mx-4 w-full border rounded-md px-4 py-2" type="text" placeholder="Search">
+                </div>
+                <div class="flex items-center pr-4">
+
+                    <button
+                        class="flex items-center text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 19l-7-7 7-7m5 14l7-7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="p-4">
+                <!-- inspired by tailwindcss.com -->
+                <ul class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+                    <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
+                        <div class="order-1 sm:ml-6 xl:ml-0">
+                            <h3 class="mb-1 text-slate-900 font-semibold">
+                                <span class="mb-1 block text-sm leading-6 text-indigo-500">Headless UI</span>Completely
+                                unstyled, fully
+                                accessible UI components
+                            </h3>
+                            <div class="prose prose-slate prose-sm text-slate-600">
+                                <p>Completely unstyled, fully accessible UI components, designed to integrate
+                                    beautifully with Tailwind
+                                    CSS.</p>
+                            </div><a
+                                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+                                href="">Learn
+                                more<span class="sr-only">, Completely unstyled, fully accessible UI components</span>
+                                <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400" width="3"
+                                    height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M0 0L3 3L0 6"></path>
+                                </svg></a>
+                        </div>
+                        <img src="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg" alt=""
+                            class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
+                            width="1216" height="640">
+                    </li>
+                    <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
+                        <div class="order-1 sm:ml-6 xl:ml-0">
+                            <h3 class="mb-1 text-slate-900 font-semibold">
+                                <span class="mb-1 block text-sm leading-6 text-purple-500">Heroicons</span>Beautiful
+                                hand-crafted SVG
+                                icons, by the makers of Tailwind CSS.
+                            </h3>
+                            <div class="prose prose-slate prose-sm text-slate-600">
+                                <p>A set of 450+ free MIT-licensed SVG icons. Available as basic SVG icons and via
+                                    first-party React and
+                                    Vue libraries.</p>
+                            </div><a
+                                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+                                href="">Learn
+                                more<span class="sr-only">, Beautiful hand-crafted SVG icons, by the makers of Tailwind
+                                    CSS.</span>
+                                <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400" width="3"
+                                    height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M0 0L3 3L0 6"></path>
+                                </svg></a>
+                        </div>
+                        <img src="https://tailwindcss.com/_next/static/media/heroicons@75.4a558f35.jpg" alt=""
+                            class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
+                            width="1216" height="640">
+                    </li>
+                    <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
+                        <div class="order-1 sm:ml-6 xl:ml-0">
+                            <h3 class="mb-1 text-slate-900 font-semibold">
+                                <span class="mb-1 block text-sm leading-6 text-cyan-500">Hero Patterns</span>Seamless
+                                SVG background
+                                patterns by the makers of Tailwind CSS.
+                            </h3>
+                            <div class="prose prose-slate prose-sm text-slate-600">
+                                <p>A collection of over 100 free MIT-licensed high-quality SVG patterns for you to use
+                                    in your web
+                                    projects.</p>
+                            </div><a
+                                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+                                href="">Learn
+                                more<span class="sr-only">, Seamless SVG background patterns by the makers of Tailwind
+                                    CSS.</span>
+                                <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400" width="3"
+                                    height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M0 0L3 3L0 6"></path>
+                                </svg></a>
+                        </div>
+                        <img src="https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg" alt=""
+                            class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
+                            width="1216" height="640">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

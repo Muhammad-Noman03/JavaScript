@@ -34,7 +34,7 @@ function renderTask() {
             placeholder="...Add Task" value="${value}" readonly>
             <div class="btns flex gap-2 items-center">
                 <div id="editBtn" class="bg-blue-400 text-white px-3 py-2 rounded-lg cursor-pointer"
-                    data-id="task${index}" onClick="editTask(event)">Edit Task
+                    data-id="task${index}" onClick="editTask(event, ${index})">Edit Task
                 </div>
                 <div id="deleteBtn" class="bg-red-600 text-white px-3 py-2 rounded-lg cursor-pointer"
                     data-id="task${index}" onClick="deleteTask(${index})">Delete Task
@@ -50,21 +50,26 @@ function renderTask() {
 // Add Task
 function addTask() {
     let value = input.value;
+
+    if (!value) {
+        return;
+    }
     todo.push(value);
 
     input.value = '';
 }
 
 // Edit Task and Save Task
-function editTask(e) {
+function editTask(e, index) {
     let el = e.target;
     let input = el.parentNode.parentNode.children[0];
     if (el.innerText === 'Edit Task') {
         el.innerText = 'Save Task'
         input.removeAttribute('readonly');
-    } else {
+    } else if (input.value) {
         el.innerText = 'Edit Task'
         input.setAttribute('readonly', 'readonly');
+        todo.splice(index, 1, input.value)
     }
 }
 

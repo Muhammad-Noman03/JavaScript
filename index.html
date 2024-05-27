@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects and Task</title>
+    <link rel="stylesheet" href="./Dashboard/css/output.css">
+    <link rel="shortcut icon" href="icon/javascript_24dp_FILL0_wght400_GRAD0_opsz24.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="flex h-screen bg-gray-100">
+
+        <!-- sidebar -->
+        <div id="sidebarContainer" class="flex flex-col w-0 transition-all duration-1000 bg-gray-800">
+            <div class="flex items-center justify-center h-16 bg-gray-900">
+                <span class="text-white font-bold uppercase">Sidebar</span>
+            </div>
+            <div class="flex flex-col flex-1 overflow-y-auto">
+                <nav class="flex-1 px-2 py-4 bg-gray-800">
+                    <a onclick="window.location.href = './Dashboard/html/projects.html'"
+                        class="flex items-center px-4 py-2 rounded-lg cursor-pointer text-gray-100 hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="M440-183v-274L200-596v274l240 139Zm80 0 240-139v-274L520-457v274Zm-40-343 237-137-237-137-237 137 237 137ZM160-252q-19-11-29.5-29T120-321v-318q0-22 10.5-40t29.5-29l280-161q19-11 40-11t40 11l280 161q19 11 29.5 29t10.5 40v318q0 22-10.5 40T800-252L520-91q-19 11-40 11t-40-11L160-252Zm320-228Z" />
+                        </svg>
+                        Deployed Projects
+                    </a>
+                    <a onclick="window.location.href = './Dashboard/html/Task.html'"
+                        class="flex items-center px-4 py-2 rounded-lg cursor-pointer mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
+                        </svg>
+                        Task
+                    </a>
+                    <a href="#"
+                        class="flex items-center px-4 py-2 rounded-lg cursor-pointer mt-2 text-gray-100 hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        Settings
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex flex-col flex-1 overflow-y-auto">
+            <div class="flex items-center justify-between h-16 bg-white border-b border-gray-200">
+                <div class="flex items-center px-4">
+                    <button id="sidebar" class="text-gray-500 focus:outline-none focus:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <input class="mx-4 w-full border rounded-md px-4 py-2" type="text" placeholder="Search">
+                </div>
+                <div class="flex items-center pr-4">
+
+                    <button
+                        class="flex items-center text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 19l-7-7 7-7m5 14l7-7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="p-4">
+                <h1 class="text-2xl font-bold">Welcome to my dashboard!</h1>
+                <p class="mt-2 text-gray-600">This is an example dashboard using Tailwind CSS.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./Dashboard/js/script.js"></script>
+</body>
+
+</html>
