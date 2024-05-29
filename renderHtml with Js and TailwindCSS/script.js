@@ -63,6 +63,8 @@ function addTask() {
 function editTask(e, index) {
     let el = e.target;
     let input = el.parentNode.parentNode.children[0];
+    console.log(input);
+
     if (el.innerText === 'Edit Task') {
         el.innerText = 'Save Task'
         input.removeAttribute('readonly');
