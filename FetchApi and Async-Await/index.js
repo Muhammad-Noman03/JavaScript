@@ -22,6 +22,11 @@ input.addEventListener('keydown', async (e) => {
     }
 })
 
+searchBtn.addEventListener('click', () => {
+    const city = input.value;
+    weather(city);
+})
+
 // FUNCTION FOR FETCHING WEATHER DATA
 async function weather(city) {
     try {
