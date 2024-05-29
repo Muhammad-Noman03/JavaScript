@@ -51,7 +51,7 @@ I'm always open to feedback and suggestions. If you have any ideas for new proje
 
 I'm documenting my learning journey not just for myself but to connect with others who are on the same path. Let's learn and grow together!
 
-- **LinkedIn**: [SufiyanAK](https://www.linkedin.com/in/sufiyan-ak-912589264/)
+- **LinkedIn**: [Muhammad Noman](https://www.linkedin.com/in/muhammad-noman-4481b72b5/)
 
 Thank you for stopping by! Happy coding! 🎉
 
