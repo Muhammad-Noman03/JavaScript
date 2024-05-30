@@ -6,7 +6,7 @@ const editBtn = document.querySelector('#editBtn');
 const deleteBtn = document.querySelector('#deleteBtn');
 
 // VARIABLES
-const todo = [];
+const todo = JSON.parse(localStorage.getItem('todo')) || [];
 
 // EventListner on Enter on Input
 input.addEventListener('keydown', (e) => {
@@ -21,9 +21,12 @@ addBtn.addEventListener('click', () => {
     renderTask()
 })
 
-
 // Render Task on HTML
 function renderTask() {
+    if (todo.length === 0) {
+        localStorage.removeItem('todo');
+    }
+
     let html = '';
 
     todo.forEach((value, index) => {
@@ -57,6 +60,7 @@ function addTask() {
     todo.push(value);
 
     input.value = '';
+    saveToStorage(todo)
 }
 
 // Edit Task and Save Task
@@ -71,13 +75,22 @@ function editTask(e, index) {
     } else if (input.value) {
         el.innerText = 'Edit Task'
         input.setAttribute('readonly', 'readonly');
-        todo.splice(index, 1, input.value)
+        todo.splice(index, 1, input.value);
+        saveToStorage(todo)
     }
 }
 
 // Delete Task
 function deleteTask(index) {
     todo.splice(index, 1);
+    saveToStorage(todo)
 
     renderTask();
 }
+
+// Save To Storage
+function saveToStorage(task) {
+    localStorage.setItem('todo', JSON.stringify(task));
+}
+
+renderTask();
