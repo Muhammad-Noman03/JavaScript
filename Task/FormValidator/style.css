@@ -35,7 +35,7 @@
 }
 
 #inputBox {
-    border: 2px solid grey;
+    border: 3px solid grey;
 }
 
 #input {
@@ -48,6 +48,7 @@
 
 #signUpBtn {
     color: white;
+    border: none;
     font-size: 1.2rem;
     padding: .6rem;
     background-color: rgb(91, 91, 247);
@@ -59,6 +60,14 @@
     transform: translateY(-3px);
 }
 
-#signUpBtn:active {
-    transform: translateY(0px);
+.found {
+    border-color: rgb(13, 199, 13) !important;
 }
+
+.error {
+    border-color: rgb(221, 38, 38) !important;
+}
+
+/* #signUpBtn:active {
+    transform: translateY(0px);
+} */
