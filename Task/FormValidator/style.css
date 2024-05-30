@@ -36,6 +36,7 @@
 
 #inputBox {
     border: 3px solid grey;
+    transition: all .5s;
 }
 
 #input {
