@@ -7,47 +7,58 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#container {
-    height: 100vh;
+#container,
+#form,
+#inputBox,
+#signUpBtn {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#container {
+    height: 100vh;
 }
 
 #form {
-    border: 4px solid grey;
     height: 15rem;
     width: 60%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: .8rem;
 }
 
-#inputBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid grey;
-    border-radius: .8rem;
+#inputBox,
+#signUpBtn {
     width: 40%;
+    border-radius: .8rem;
     height: 3.6rem;
 }
 
+#inputBox {
+    border: 2px solid grey;
+}
+
 #input {
+    font-size: 1.2rem;
     border: none;
     outline: none;
     width: 90%;
-    font-size: 1.4rem;
     padding: 0 .6rem;
 }
 
 #signUpBtn {
-    width: 40%;
-    text-align: center;
+    color: white;
     font-size: 1.2rem;
-    border: 2px solid grey;
     padding: .6rem;
-    border-radius: .8rem;
+    background-color: rgb(91, 91, 247);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#signUpBtn:hover {
+    transform: translateY(-3px);
+}
+
+#signUpBtn:active {
+    transform: translateY(0px);
 }
