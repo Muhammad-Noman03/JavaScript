@@ -1,6 +1,15 @@
 // Question 1
 // Interviewer: Rana, imagine you have an array like [3, 7, 11, 2, 9]. How would you write JavaScript code to find the sum of all these numbers ?
+function sum(array) {
+    let result = 0;
+    array.forEach(val => {
+        result += val;
+    });
 
+    console.log(result);
+}
+
+sum([3, 7, 11, 2, 9]);
 
 // Question 2
 // Interviewer : Rana, imagine you're given a number, say num, and you need to determine whether it's even or odd.How would you write JavaScript code to do that ?
@@ -27,7 +36,6 @@
 
 // Question 7
 // Interviewer : Rana, imagine you have an array of elements, such as ['apple', 'banana', 'orange', 'apple', 'banana', 'apple'], and you need to write JavaScript code to count the occurrences of each element in the array.How would you approach this problem ?
-
 
 
 
