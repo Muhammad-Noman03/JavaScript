@@ -39,7 +39,21 @@ function reverseString(str) {
 
 // Question 4
 // Interviewer : Rana, suppose you're given a string, such as "radar", and you need to determine whether it's a palindrome(reads the same forwards and backwards).How would you approach this problem using JavaScript?
+function palendrome(str) {
+    let reverse = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverse += str[i]
+    }
 
+    if (str === reverse) {
+        // console.log(reverse);
+        console.log(`${reverse} is palendrome`);
+    } else {
+        console.log(`${reverse} is not palendrome`);
+    }
+}
+
+// palendrome('radar')
 
 // Question 5
 // Interviewer: Rana, imagine you have an array with duplicate elements, like[1, 2, 3, 3, 4, 5, 5, 6], and you need to write JavaScript code to remove these duplicates and return a new array with unique elements.How would you approach this problem ?
