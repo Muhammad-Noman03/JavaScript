@@ -57,7 +57,15 @@ function palendrome(str) {
 
 // Question 5
 // Interviewer: Rana, imagine you have an array with duplicate elements, like[1, 2, 3, 3, 4, 5, 5, 6], and you need to write JavaScript code to remove these duplicates and return a new array with unique elements.How would you approach this problem ?
+function removeDuplication(numbers) {
+    let uniqueNumbers = numbers.filter((value, index, array) => {
+        return array.indexOf(value) === index;
+    });
 
+    console.log(uniqueNumbers);
+}
+
+// removeDuplication([1, 2, 3, 3, 4, 5, 5, 6])
 
 
 // Question 6
