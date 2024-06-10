@@ -161,7 +161,7 @@ function anagrams(str1, str2) {
 
 }
 
-anagrams("Listen", "Silent")
+// anagrams("Listen", "Silent")
 
 
 
@@ -169,8 +169,16 @@ anagrams("Listen", "Silent")
 // Question 11
 // Interviewer: Rana, imagine you're given a sentence, such as "Hello world, how are you?", and you need to reverse the order of the words in the sentence so that it becomes "you? are how world, Hello". How would you approach this problem using JavaScript?
 
+function reverseSentence(str) {
+    let reverse = "";
+    for (let i = str.length - 1; i >= 0 - 1; i--) {
+        reverse += str[i];
+    }
+    console.log(reverse);
 
+}
 
+// reverseSentence("hello world, how are you?");
 
 
 // Question 12
