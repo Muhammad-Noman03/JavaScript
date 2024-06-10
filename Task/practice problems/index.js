@@ -141,6 +141,27 @@ function factorial(val) {
 // Question 10
 // Interviewer: Rana, suppose you're given two strings, such as "listen" and "silent", and you need to determine whether they are anagrams of each other (i.e., if they contain the same characters in the same quantities, but in a different order). How would you approach this problem using JavaScript?
 
+function anagrams(str1, str2) {
+    let n1 = str1.length;
+    let n2 = str2.length;
+
+    if (n1 !== n2) {
+        return;
+    }
+    str1 = str1.toLowerCase().split('').sort();
+    str2 = str2.toLowerCase().split('').sort();
+    for (let i = 0; i < str1.length; i++) {
+        if (str1[i] !== str2[i]) {
+            console.log("not anagram");
+            return;
+        }
+    }
+    console.log("anagram");
+
+
+}
+
+anagrams("Listen", "Silent")
 
 
 
