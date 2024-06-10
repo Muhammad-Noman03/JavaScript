@@ -112,7 +112,12 @@ function countOccurrence(arr) {
 
 // Question 8
 // Interviewer : Rana, suppose you have an array of numbers, such as [5, 2, 9, 1, 7], and you need to write JavaScript code to sort these numbers in ascending order.How would you approach this problem ?
+function Sort(arr) {
+    const newArr = arr.sort();
+    console.log(newArr);
+}
 
+// Sort([5, 2, 9, 1, 7])
 
 
 
