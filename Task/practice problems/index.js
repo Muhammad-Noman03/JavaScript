@@ -184,6 +184,31 @@ function reverseSentence(str) {
 // Question 12
 // Interviewer: Rana, suppose you're given a string, such as "programming", and you need to find the first non-repeating character in the string (i.e., a character that appears only once in the string). How would you approach this problem using JavaScript?
 
+function repeatingString(str) {
+    let check = str.split('');
+    check = check.join('');
+    let count = {}
+    console.log(check);
+
+    for (let i = 0; i < check.length; i++) {
+        let char = check[i]
+        // console.log(count);
+        if (count[char]) {
+            count[char]++;
+        } else {
+            count[char] = 1;
+        }
+    }
+    console.log(count);
 
 
+    for (let i = 0; i < check.length; i++) {
+        let char = check[i];
+        if (count[char] === 1) {
+            console.log(`non-repeating strings are : ${char}`);
+        }
+    }
+    return null;
+}
 
+// repeatingString("programming");
