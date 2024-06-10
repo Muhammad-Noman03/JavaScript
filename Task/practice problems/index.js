@@ -9,7 +9,7 @@ function sum(array) {
     console.log(result);
 }
 
-sum([3, 7, 11, 2, 9]);
+// sum([3, 7, 11, 2, 9]);
 
 // Question 2
 // Interviewer : Rana, imagine you're given a number, say num, and you need to determine whether it's even or odd.How would you write JavaScript code to do that ?
@@ -26,7 +26,16 @@ function findEvenOdd(val) {
 
 // Question 3
 // Interviewer : Rana, imagine you have a string, for example, "hello", and you need to reverse it to "olleh" using JavaScript.How would you approach this problem ?
+function reverseString(str) {
+    let reverse = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverse += str[i]
+    }
 
+    console.log(reverse);
+}
+
+// reverseString('hello')
 
 // Question 4
 // Interviewer : Rana, suppose you're given a string, such as "radar", and you need to determine whether it's a palindrome(reads the same forwards and backwards).How would you approach this problem using JavaScript?
